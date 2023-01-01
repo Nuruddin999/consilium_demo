@@ -1,0 +1,64 @@
+.user-item-loader,
+.user-item-error {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-item-wrapper {
+  height: calc(100% - 60px);
+  overflow-y: auto;
+  .user-item {
+    width: 600px;
+    margin: 0 auto 0;
+    .user-info-block {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      img {
+        border-radius: 50%;
+      }
+      p {
+        width: 115px;
+        text-align: start;
+      }
+      .user-info {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .user-info-name {
+          width: 400px;
+        }
+      }
+    }
+    .rights-title {
+      margin: 20px;
+    }
+    .rights-section {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      align-items: center;
+    }
+    .sign-img,
+    .upload-section {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .sign-img {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .save-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .close-ic {
+    display: flex;
+    justify-content: end;
+  }
+}

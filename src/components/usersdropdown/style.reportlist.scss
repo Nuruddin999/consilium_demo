@@ -1,0 +1,21 @@
+.users-dropdown {
+  max-height: 300px;
+  border-top: 1px solid #9dc7f1;
+  margin-top: 15px;
+  tr {
+    cursor: pointer;
+    &:hover {
+      background-color: #e9f3fc;
+      background-clip: padding-box;
+      border-top: 1px solid #9dc7f1;
+      border-bottom: 1px solid #9dc7f1;
+    }
+  }
+  .pagination {
+    height: 40px;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

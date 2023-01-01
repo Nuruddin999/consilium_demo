@@ -1,0 +1,12 @@
+.anamnesis {
+    .complaints {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 20px;
+        .text-section {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+    }
+}

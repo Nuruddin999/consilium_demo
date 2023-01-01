@@ -1,0 +1,19 @@
+.add-button {
+  display: flex;
+  background: #1f75cb;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  box-shadow: inset 0 0 0 1px #1068bf;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  color: aliceblue;
+  text-transform: none;
+  height: 100%;
+  border-radius: 0.25rem;
+  font-size: 1em;
+  cursor: pointer;
+}
