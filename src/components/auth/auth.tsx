@@ -9,8 +9,8 @@ import { login } from "../../actions/user";
 import { setError, setStatus } from "../../reducers/ui";
 
 export const Auth = (): React.ReactElement => {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('testben@gmail.com')
+  const [password, setPassword] = useState('testben')
   const { user } = useSelector((state: RootState) => state.user)
   const { isCircular, errorMessage } = useSelector((state: RootState) => state.ui)
   const dispatch = useDispatch()

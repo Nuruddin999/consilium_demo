@@ -81,13 +81,13 @@ exports[`add modal works properly renders properly 1`] = `
                   id="mui-7"
                   placeholder="dd.mm.y"
                   type="tel"
-                  value="26.12.2022"
+                  value="02.01.2023"
                 />
                 <div
                   class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1laqsz7-MuiInputAdornment-root"
                 >
                   <button
-                    aria-label="Choose date, selected date is 26 дек. 2022 г."
+                    aria-label="Choose date, selected date is 2 янв. 2023 г."
                     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root"
                     tabindex="0"
                     type="button"
