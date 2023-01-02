@@ -10,18 +10,20 @@
 
 Запуск приложения в режиме разработки.<br />
 Откройте [http://localhost:3000](http://localhost:3000), чтобы увидеть его в браузере.
+На странице авторизции в полях логин и пароль уже введены нужные значения (логин testben@gmail.com пароль testben)
 
 
 
-### `npm test`
+###  `yarn test -u` (`npm test -u`)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Запуск тестов.<br />
 
-### `npm run build`
 
-## Learn More
+### `yarn build`  (`npm run build`)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Сборка проекта
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Обратная связь
+
+telegram @Nuruddin
+email: sg7720@gmail.com
