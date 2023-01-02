@@ -68,7 +68,7 @@ const ApplicationItem = (): React.ReactElement => {
     <Button onClick={handleClick} size='medium' variant='contained' className='save-button'>
       Сохранить
     </Button>
-    <a href={`/flpdf/${id}`} target='_blank' rel="noreferrer"><IconButton size='medium'>
+    <a href={`/demover/flpdf/${id}`} target='_blank' rel="noreferrer"><IconButton size='medium'>
       <PictureAsPdfIcon className='only-for-inner-warning' />
     </IconButton></a>
   </div>
