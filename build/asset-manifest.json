@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8020eb3b.css",
-    "main.js": "/static/js/main.c81e11f5.js",
-    "static/media/TimesNewRomanPS-BoldMT.ttf": "/static/media/TimesNewRomanPS-BoldMT.cc3d758274d0cf379bdf.ttf",
-    "static/media/TimesNewRomanPSMT.ttf": "/static/media/TimesNewRomanPSMT.ea822ef9b261e9594b74.ttf",
-    "static/media/sign.jpeg": "/static/media/sign.477c0706778f2416e255.jpeg",
-    "static/media/hopedoc.png": "/static/media/hopedoc.ae22fcb5ef0372095b0a.png",
-    "index.html": "/index.html",
-    "main.8020eb3b.css.map": "/static/css/main.8020eb3b.css.map",
-    "main.c81e11f5.js.map": "/static/js/main.c81e11f5.js.map"
+    "main.css": "/demover/static/css/main.8020eb3b.css",
+    "main.js": "/demover/static/js/main.dd8535cf.js",
+    "static/media/TimesNewRomanPS-BoldMT.ttf": "/demover/static/media/TimesNewRomanPS-BoldMT.cc3d758274d0cf379bdf.ttf",
+    "static/media/TimesNewRomanPSMT.ttf": "/demover/static/media/TimesNewRomanPSMT.ea822ef9b261e9594b74.ttf",
+    "static/media/sign.jpeg": "/demover/static/media/sign.477c0706778f2416e255.jpeg",
+    "static/media/hopedoc.png": "/demover/static/media/hopedoc.ae22fcb5ef0372095b0a.png",
+    "index.html": "/demover/index.html",
+    "main.8020eb3b.css.map": "/demover/static/css/main.8020eb3b.css.map",
+    "main.dd8535cf.js.map": "/demover/static/js/main.dd8535cf.js.map"
   },
   "entrypoints": [
     "static/css/main.8020eb3b.css",
-    "static/js/main.c81e11f5.js"
+    "static/js/main.dd8535cf.js"
   ]
 }
