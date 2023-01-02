@@ -12,7 +12,7 @@ import MyDoc from './components/applicationItem/pdfdoc/pdfdoc';
 function App() {
 
   return (
-    <Router>
+    <Router basename={'/demover'}>
       <div className="App">
         {/* <Auth /> */}
         <Switch>
