@@ -7,6 +7,7 @@ import TimesNewRomanBoldFont from '../../../TimesNewRomanPS-BoldMT.ttf'
 import Table from './Table'
 import hyphen from 'hyphen';
 import pattern from 'hyphen/patterns/ru';
+import { declination } from '../../../helpers'
 
 
 const hyphenator = hyphen(pattern);
@@ -282,6 +283,7 @@ function MyDocContent({ applItem, isDeletedPlace, status }) {
   const month = new Date(patientBirthDate).getMonth() + 1
   const date = new Date(patientBirthDate).getDate().toLocaleString()
   const age = currentYear - yearsOld
+  const ageWithEnding = declination(age,[' год', ' года', ' лет'])
   const currentMonth = new Date().getMonth()
   const yearsInMonth = new Date(patientBirthDate).getMonth()
   const birthInMonthDifference = currentMonth - yearsInMonth
@@ -315,7 +317,7 @@ function MyDocContent({ applItem, isDeletedPlace, status }) {
             </View> : <View></View>}
             {patientBirthDate ? <View style={styles.birth}>
               <Text>
-                {`${date > 9 ? date : '0' + date}.${month > 9 ? month : '0' + month}.${yearsOld} г.р. (${age > 0 ? age + 'лет' : ageInMonth + 'мес'})`}
+                {`${date > 9 ? date : '0' + date}.${month > 9 ? month : '0' + month}.${yearsOld} г.р.   (${age > 0 ? age + ' '+ ageWithEnding : ageInMonth + 'мес'})`}
               </Text>
               <Text style={styles.birthText}>
                 Дата рождения
@@ -323,10 +325,10 @@ function MyDocContent({ applItem, isDeletedPlace, status }) {
             </View> : <View></View>}
           </View>
           <Text style={styles.reasonTitle}>На основании: </Text>
-          <Text style={styles.reasonSubTitle}> (указать основания: жалобы, симптомы, синдромы подозрения врача и пр.): </Text>
+          <Text style={styles.reasonSubTitle}> (указать основания: жалобы, симптомы, синдромы, подозрения врача и пр.): </Text>
           <View style={{ ...styles.commonSize, ...styles.anamnesisSection }}>
             {complaint ? <Text style={styles.complaintTitle} wrap={false}><Text style={styles.complaintTitleFirstWord}>Жалоб: </Text>{complaint}</Text> : null}
-            {anamnesis ? <Text style={{ ...styles.complaintTitle, marginTop: '10px' }} wrap={false}><Text style={styles.complaintTitleFirstWord}>Анамнеза- </Text>{anamnesis}
+            {anamnesis ? <Text style={{ ...styles.complaintTitle, marginTop: '10px' }} wrap={false}><Text style={styles.complaintTitleFirstWord}>Анамнеза: </Text>{anamnesis}
             </Text> : null}
             {diagnosticData ? <Text style={{ ...styles.complaintTitle, marginTop: '10px' }} wrap={false}><Text style={styles.complaintTitleFirstWord}>Данных обследования: </Text>{diagnosticData}</Text> : null}
           </View>

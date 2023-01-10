@@ -1,7 +1,7 @@
 import { Text, View } from '@react-pdf/renderer'
 import hyphen from 'hyphen';
 import pattern from 'hyphen/patterns/ru';
-import { unset } from 'lodash'
+
 
 const hyphenator = hyphen(pattern);
 
@@ -40,7 +40,7 @@ const TablePdf = ({ headers, dataContent, contentKeys, title, subTitle, status, 
       flexBasis:  `${(status || isDeletedPlace) ? 95 / (headers.length - 2) : 95 / (headers.length - 1)}%`,
       flexWrap: 'wrap',
       fontSize: '12px',
-      fontFamily: val !== 'place' ? 'Times New Roman Reg' : 'Times New Roman Bold',
+      fontFamily: 'Times New Roman Reg',
       border: '1px solid black',
       display: 'flex',
       justifyContent: 'center',
@@ -97,7 +97,7 @@ const TablePdf = ({ headers, dataContent, contentKeys, title, subTitle, status, 
         flexDirection: 'row',
         width: '100%',
       }} >
-        <View style={{
+         {dataContent && dataContent.length > 0 && contentKeys.length > 0 ? <View style={{
           flexBasis: '5%',
           height: '100%',
           border: '1px solid black',
@@ -107,12 +107,8 @@ const TablePdf = ({ headers, dataContent, contentKeys, title, subTitle, status, 
           padding: '5px'
         }}>
           <Text style={{ fontFamily: "Times New Roman Reg", fontSize: '12px' }}>1</Text>
-        </View>
-        {dataContent && dataContent.length > 0 && contentKeys.length > 0 ? contentKeys.map((val, valIndex) => renderPlaceContentView(val, dataContent[0][val])) : headers.map((hdr, hdrIndex) => {
-          if (hdrIndex !== 0) {
-            return <View style={{ flexBasis: `${95 / (headers.length - 1)}%`, border: '1px solid black', }}></View>
-          }
-        })}
+        </View> : null}
+        {dataContent && dataContent.length > 0 && contentKeys.length > 0 ? contentKeys.map((val, valIndex) => renderPlaceContentView(val, dataContent[0][val])) : null}
       </View>
     </View>
     {dataContent.length > 0 ?
